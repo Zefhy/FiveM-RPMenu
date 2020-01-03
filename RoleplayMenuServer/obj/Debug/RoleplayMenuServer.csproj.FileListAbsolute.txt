@@ -1,0 +1,7 @@
+D:\Dev Projects\RoleplayMenu\RoleplayMenuServer\bin\Debug\RoleplayMenuServer.net.dll
+D:\Dev Projects\RoleplayMenu\RoleplayMenuServer\bin\Debug\RoleplayMenuServer.net.pdb
+D:\Dev Projects\RoleplayMenu\RoleplayMenuServer\obj\Debug\RoleplayMenuServer.csproj.CopyComplete
+D:\Dev Projects\RoleplayMenu\RoleplayMenuServer\obj\Debug\RoleplayMenuServer.net.dll
+D:\Dev Projects\RoleplayMenu\RoleplayMenuServer\obj\Debug\RoleplayMenuServer.net.pdb
+D:\Dev Projects\RoleplayMenu\RoleplayMenuServer\bin\Debug\CitizenFX.Core.Server.dll
+D:\Dev Projects\RoleplayMenu\RoleplayMenuServer\bin\Debug\CitizenFX.Core.Server.xml
