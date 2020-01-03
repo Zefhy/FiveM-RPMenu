@@ -56,6 +56,7 @@ namespace RoleplayMenuClient
                 "Disables the automatic seat shuffling the passenger performs if the driver seat is empty", true)
             {
                 Enabled = true,
+                Checked = false
             };
             miscSettingsMenu.AddMenuItem(seatShuffleItem);
 

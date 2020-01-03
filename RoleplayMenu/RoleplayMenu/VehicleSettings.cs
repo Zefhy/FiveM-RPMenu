@@ -10,7 +10,7 @@ namespace RoleplayMenuClient
 {
     class VehicleSettings : BaseScript
     {
-        private static bool disableSeatShuffle = true;
+        private static bool disableSeatShuffle = false;
 
         public VehicleSettings()
         {
@@ -28,17 +28,17 @@ namespace RoleplayMenuClient
         {
             await Delay(0);
 
-            Debug.WriteLine("Stopping Shuffle 0");
             if (disableSeatShuffle && Game.PlayerPed.IsInVehicle())
             {
-                Debug.WriteLine("Stopping Shuffle 1");
+                Debug.WriteLine(Game.PlayerPed.IsDoingDriveBy.ToString() + " " + Game.PlayerPed.IsAiming.ToString());
                 if (Game.PlayerPed.SeatIndex == VehicleSeat.RightFront)
                 {
-                    Debug.WriteLine("Stopping Shuffle 2");
-                    if (GetIsTaskActive(Game.PlayerPed.Handle, 165))
+                    if (!Game.PlayerPed.IsDoingDriveBy || !Game.PlayerPed.IsAiming || !Game.PlayerPed.IsShooting)
                     {
-                        Debug.WriteLine("Stopping Shuffle 3");
-                        Game.PlayerPed.SetIntoVehicle(Game.PlayerPed.CurrentVehicle, Game.PlayerPed.SeatIndex);
+                        if (GetIsTaskActive(Game.PlayerPed.Handle, 165))
+                        {
+                            Game.PlayerPed.SetIntoVehicle(Game.PlayerPed.CurrentVehicle, Game.PlayerPed.SeatIndex);
+                        }
                     }
                 }
             }
