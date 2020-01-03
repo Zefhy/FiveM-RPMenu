@@ -74,6 +74,7 @@
     <Compile Include="Taxi.cs" />
     <Compile Include="TaxiHandler.cs" />
     <Compile Include="UIHandler.cs" />
+    <Compile Include="VehicleSettings.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

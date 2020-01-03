@@ -6,3 +6,11 @@ D:\Dev Projects\RoleplayMenu\RoleplayMenu\RoleplayMenu\obj\Debug\RoleplayMenuCli
 D:\Dev Projects\RoleplayMenu\RoleplayMenu\RoleplayMenu\obj\Debug\RoleplayMenuClient.net.dll
 D:\Dev Projects\RoleplayMenu\RoleplayMenu\RoleplayMenu\obj\Debug\RoleplayMenuClient.net.pdb
 D:\Dev Projects\RoleplayMenu\RoleplayMenu\RoleplayMenu\bin\Debug\CitizenFX.Core.Client.xml
+D:\Dev Projects\RoleplayMenu\FiveM-RPMenu\RoleplayMenu\RoleplayMenu\bin\Debug\RoleplayMenuClient.net.dll
+D:\Dev Projects\RoleplayMenu\FiveM-RPMenu\RoleplayMenu\RoleplayMenu\bin\Debug\RoleplayMenuClient.net.pdb
+D:\Dev Projects\RoleplayMenu\FiveM-RPMenu\RoleplayMenu\RoleplayMenu\bin\Debug\CitizenFX.Core.Client.dll
+D:\Dev Projects\RoleplayMenu\FiveM-RPMenu\RoleplayMenu\RoleplayMenu\bin\Debug\MenuAPI.dll
+D:\Dev Projects\RoleplayMenu\FiveM-RPMenu\RoleplayMenu\RoleplayMenu\bin\Debug\CitizenFX.Core.Client.xml
+D:\Dev Projects\RoleplayMenu\FiveM-RPMenu\RoleplayMenu\RoleplayMenu\obj\Debug\RoleplayMenuClient.csproj.CopyComplete
+D:\Dev Projects\RoleplayMenu\FiveM-RPMenu\RoleplayMenu\RoleplayMenu\obj\Debug\RoleplayMenuClient.net.dll
+D:\Dev Projects\RoleplayMenu\FiveM-RPMenu\RoleplayMenu\RoleplayMenu\obj\Debug\RoleplayMenuClient.net.pdb
