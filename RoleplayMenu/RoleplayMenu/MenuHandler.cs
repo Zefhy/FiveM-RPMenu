@@ -65,7 +65,7 @@ namespace RoleplayMenuClient
             {
                 if (_item == taxiItem)
                 {
-                    UIHandler.ShowQuickNotification("A taxi will be dispatched to your location shortly.");
+                    UIHandler.ShowNotificationWithIcon("CHAR_TAXI", "CHAR_TAXI", "A taxi will be dispatched to your location shortly.", "Downtown Cab & Co.");
                     menu.CloseMenu();
                     TriggerEvent("RoleplayMenu:SendTaxiToPlayer");
                 } 

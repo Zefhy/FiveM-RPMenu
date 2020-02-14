@@ -16,5 +16,13 @@ namespace RoleplayMenuClient
             AddTextComponentString(text);
             DrawNotification(false, true);
         }
+
+        public static void ShowNotificationWithIcon(string textureDirectory, string textureName, string text, string sender)
+        {
+            SetNotificationTextEntry("STRING");
+            AddTextComponentString(text);
+            SetNotificationMessage_3(textureDirectory, textureName, false, 0, sender, text);
+            DrawNotification(false, true);
+        }
     }
 }
