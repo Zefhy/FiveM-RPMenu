@@ -15,6 +15,8 @@ namespace RoleplayMenuClient
         private Ped TaxiDriver;
         private Player Owner;
         private Vector3 Destination;
+        private const int DRIVING_STYLE_NORMAL = 8388614;
+        private const int DRIVING_STYLE_HURRY = (int)DrivingStyle.Rushed;
         bool isActive;
 
         public Taxi(Vehicle taxiVehicle, Ped taxiDriver, Player owner)
@@ -104,8 +106,7 @@ namespace RoleplayMenuClient
                 Screen.DisplayHelpTextThisFrame("Press ~INPUT_VEH_HEADLIGHT~ to hurry up.");
                 if (Game.IsControlJustPressed(1, (Control)74))
                 {
-                    Debug.WriteLine("Rush Mode");
-                    TaxiDriver.Task.DriveTo(TaxiVehicle, Destination, 10f, 60f, (int)DrivingStyle.Rushed);
+                    TaskVehicleGotoNavmesh(TaxiDriver.Handle, TaxiVehicle.Handle, Destination.X, Destination.Y, Destination.Z, 200f, 156, 5.0f);
                 }
             }
         }
@@ -113,7 +114,7 @@ namespace RoleplayMenuClient
         public void DriveToDestination(Vector3 destination)
         {
             Destination = World.GetNextPositionOnStreet(destination);
-            TaxiDriver.Task.DriveTo(TaxiVehicle, Destination, 10f, 30f, (int)DrivingStyle.Normal);
+            TaxiDriver.Task.DriveTo(TaxiVehicle, Destination, 10f, 30f, DRIVING_STYLE_NORMAL);
         }
 
         public void MarkAsNoLongerNeeded()
@@ -122,14 +123,14 @@ namespace RoleplayMenuClient
             TaxiVehicle.AttachedBlip.Delete();
             TaxiVehicle.MarkAsNoLongerNeeded();
             TaxiDriver.MarkAsNoLongerNeeded();
-            TaxiDriver.Task.CruiseWithVehicle(TaxiVehicle, 20f, (int)DrivingStyle.Normal);
+            TaxiDriver.Task.CruiseWithVehicle(TaxiVehicle, 20f, DRIVING_STYLE_NORMAL);
             MenuHandler.destinationsMenu.Visible = false;
         }
 
         public void Initialize()
         {
             Debug.WriteLine("[RoleplayMenu] Taxi driver tasked wth driving to player...");
-            TaxiDriver.Task.DriveTo(TaxiVehicle, Owner.Character.Position, 10f, 20f, (int)DrivingStyle.Normal);
+            TaxiDriver.Task.DriveTo(TaxiVehicle, Owner.Character.Position, 10f, 20f, DRIVING_STYLE_NORMAL);
         }
     }
 }
